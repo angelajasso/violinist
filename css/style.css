@@ -1,1 +1,186 @@
+/* General styles*/
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--body-color);
+  font-family: open Sans, Helvetica, sans-serif;
+  font-weight: var(--fweight);
+  color: var(--text-color);
+}
+
+[data-theme="light"] {
+  --h: 20;
+  --n: 25%;
+  --text-color: hsl(var(--h), 92%, 95%);
+  --body-color: hsl(var(--h), 15%, 10%);
+}
+
+[data-theme="dark"] {
+  --text-color: hsl(var(--h), 15%, 10%);
+  --body-color: hsl(var(--h), 92%, 95%);
+}
+
+:root {
+  --h: 20;
+  --n: 25%;
+  --primary-color: hsl(var(--h), 40%, 55%);
+  --white: hsl(var(--h), 92%, 95%);
+  --black: hsl(var(--h), 15%, 10%);
+  --neutral: hsl(var(--h), var(--n), var(--n));
+  --font-size: 1.6rem;
+  --font-line-height: 1.5;
+  --fweight: 700;
+}
+
+/*  header  */
+.header {
+  background-color: var(--primary-color);
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto; /* Una sola columna */
+  grid-template-rows: auto auto; /* Dos filas */
+}
+
+/*logo*/
+.logotipo {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.header p {
+  color: var(--white);
+}
+
+.logo {
+  width: 5.2rem;
+  height: 5.2rem;
+  margin: 1.6rem 1rem 1.6rem 1.6rem;
+}
+
+.toggle-lang {
+  margin: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.eng {
+  display: none;
+}
+
+/*lang*/
+.lan {
+  margin-right: 1rem;
+}
+
+/*toggle From Uiverse.io by catraco */
+.switch-name {
+  --dark-sky: var(--neutral);
+  --moon: #ffd500;
+  --light-sky: var(--white);
+  --sun: #ffd500;
+  display: inline-block;
+  position: relative;
+  border-radius: 5em;
+  cursor: pointer;
+  width: 5rem;
+  height: 2.4rem;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.switch-name .back {
+  background-color: var(--dark-sky);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.switch-name .checkbox {
+  opacity: 0;
+}
+
+.switch-name .checkbox:checked ~ .back {
+  background-color: var(--light-sky);
+}
+
+.switch-name .checkbox:checked ~ .moon {
+  transform: translate(100%) rotate(180deg);
+  opacity: 0;
+}
+
+.switch-name .checkbox:checked ~ .sun {
+  transform: translate(100%) rotate(180deg);
+  opacity: 1;
+}
+
+.switch-name .moon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 0.4em;
+  fill: var(--moon);
+  transition: 0.5s;
+}
+
+.switch-name .sun {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 0.4em;
+  fill: var(--sun);
+  transition: 0.5s;
+  opacity: 0;
+}
+
+/* nav */
+
+.navegation {
+  color: var(--white);
+  padding: 1.6rem;
+  text-align: center;
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navegation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegation li {
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border: 0.1rem solid var(--white);
+  border-radius: 20px;
+  width: 7.2rem;
+  height: 3rem;
+  font-size: 1.4rem;
+}
+
+.navegation a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.navegation li:hover,
+.navegation li:active {
+  background-color: var(--neutral);
+}

@@ -1,0 +1,12 @@
+@media (min-width: 640px) {
+  /*  header  */
+  .header {
+    grid-template-columns: auto auto auto; /* tres columnas */
+    grid-template-rows: auto; /* una fila */
+  }
+
+  .navegation {
+    grid-column: 2; /* nav a segunda columna */
+    grid-row: 1; /*Mover nav a la primera fila */
+  }
+}
