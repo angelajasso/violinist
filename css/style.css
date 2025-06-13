@@ -184,3 +184,153 @@ html {
 .navegation li:active {
   background-color: var(--neutral);
 }
+
+/* main */
+.aside {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-color);
+}
+
+.hero {
+  font-size: 3.2rem;
+  margin: 8rem 4rem 4rem 4rem;
+  text-align: center;
+  --fweight: 900;
+}
+
+.aside h2 {
+  color: var(--text-color);
+}
+
+.aside h1 {
+  color: var(--primary-color);
+}
+
+.gato-aside {
+  width: 70%;
+  margin: 4rem;
+  border-radius: 20px;
+  justify-self: center;
+}
+.about {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-color);
+  margin: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+  margin: 2rem;
+  text-align: center;
+  --fweight: 700;
+}
+
+.gato-about {
+  width: 70%;
+  margin: 4rem;
+  border-radius: 20px;
+  justify-self: center;
+}
+.text-about,
+.text-project {
+  font-size: 1.6rem;
+  margin: 0 2.4rem;
+  text-align: center;
+  --fweight: 500;
+  justify-self: center;
+}
+
+/* projects */
+.projetc {
+  margin: 8rem 4rem;
+}
+
+.text-project {
+  margin: 2rem 0 4rem 0;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  box-shadow: 0 1px 2px 0 var(--neutral);
+  border: 1px solid var(--neutral);
+  min-width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.card a {
+  text-decoration: none;
+}
+
+.content {
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.image {
+  display: flex;
+  width: 80%;
+  margin: 4rem 4rem 2rem 4rem;
+  border-radius: 20px;
+  justify-self: center;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.desc {
+  margin: 2rem 0;
+  font-size: 1.6rem;
+}
+
+.video {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: var(--neutral);
+  padding: 4px 16px;
+  border-radius: 20px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
