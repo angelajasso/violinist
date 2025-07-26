@@ -339,6 +339,9 @@ h3 {
 footer {
   background-color: var(--primary-color);
 }
+footer p {
+  margin: 0 20px;
+}
 /* From Uiverse.io by david-mohseni */
 .wrapper {
   display: inline-flex;
