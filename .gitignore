@@ -1,0 +1,49 @@
+# Sistema (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos temporales / de backup
+*.log
+*.tmp
+*.swp
+*.bak
+*.backup
+
+# Archivos de despliegue y producción
+dist/
+build/
+out/
+
+# Node.js (si usas herramientas como npm, vite, tailwind, etc.)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+.env.*.local
+
+# Coverage de tests (si haces pruebas)
+coverage/
+
+# GitHub Pages
+*.local
+.cache/
+firebase-debug.log
+firebase-debug.*
+.firebaserc
+
+# Otros
+*.zip
+*.tar.gz
+*.tgz
+*.lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

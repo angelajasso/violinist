@@ -15,4 +15,10 @@ Sitio web personal de Angela Jasso, aprendiz de violinista, donde comparte sus p
 - CSS3 (Flexbox/Grid)
 - JavaScript (Solo para el cambio de color de Dark a light)
 
+## 🚀 Demo
 
+🔗 [Ver demo en GitHub Pages](https://angelajasso.github.io/violinist/)
+
+## 🖼️ Captura
+
+![Screenshot](./assets/screenshot.png)
